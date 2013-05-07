@@ -7,14 +7,14 @@
 <meta name="description" content="">
 <meta name="author" content="Mujtaba Badat">
 <!-- Styles -->
-<%= stylesheet_link_tag "application.css" %>
-<%= stylesheet_link_tag "afolique/style-responsive.css" %>
+<%= stylesheet_link_tag "application-all.css" %>
+<%= stylesheet_link_tag "application-afolique.css" %>
 <!-- HTML5 for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 <!--[if IE 8]>
-	<%= stylesheet_link_tag "ie8.css" %>
+	<%= stylesheet_link_tag "application-ie.css" %>
 <![endif]-->
 <!-- Fav and touch icons -->
 <link rel="shortcut icon" href="ico/favicon.ico">
@@ -86,14 +86,14 @@
 								</li>
 								<li>
 									<div class="span12">
-										<h1 class="flex-caption">Agile</h1>
+										<h1 class="flex-caption" style="font-size:550%;">Agile</h1>
 										<h3 class="flex-caption">Short build cycles and frequent progress updates.</h3>
 									</div>
 
 								</li>
 								<li>
 									<div class="span12">
-										<h1 class="flex-caption">Support</h1>
+										<h1 class="flex-caption" style="font-size:550%;">Support</h1>
 										<h3 class="flex-caption">Code and run? Not this developer!</h3>
 									</div>
 
