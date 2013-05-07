@@ -327,28 +327,9 @@
 				</div>
 			</div>
 
-			<div class="row-fluid">
-				<div class="span4 portof">
-						<h2>
-							This website
-						</h2>
-						<p>
-							An elegant, responsive website to help the world find out what Mujtaba Badat has to offer.
-						</p>
-					<div class="projectdesc">
-						<ul>
-							<li>
-								Ruby on Rails
-							</li>
-							<li>
-								Twitter Bootsrap
-							</li>
-						</ul>
-					</div>
-				</div>
-
 			<!-- second portfolio row -->
 
+			<div class="row-fluid">
 				<div class="span4 portof">
 					<h2>
 						Naive Bayes Classifier
