@@ -1,3 +1,45 @@
+				<% [:notice, :error, :alert].each do |level| %>
+					<% unless flash[level].blank? %>
+						<br/>
+						<div class="alert alert-<%= flash_class(level) %>">
+							<%= flash[level] %>
+						</div>
+					<% end %>
+				<% end %>
+
+
+				<div class="hero-unit">
+				<!-- Place somewhere in the <body> of your page -->
+					<div class="slider-wrapper theme-default hero-unittext">
+						<div id="slider" class="flexslider">
+							<ul class="slides">
+								<li>
+									<div class="span12">
+										<h1 class="flex-caption">Quality</h1>
+										<h3 class="flex-caption">Applications that are built to last.</h3>
+									</div>
+
+								</li>
+								<li>
+									<div class="span12">
+										<h1 class="flex-caption">Agile</h1>
+										<h3 class="flex-caption">Short build cycles and frequent progress updates.</h3>
+									</div>
+
+								</li>
+								<li>
+									<div class="span12">
+										<h1 class="flex-caption">Support</h1>
+										<h3 class="flex-caption">Code and run? Not this developer!</h3>
+									</div>
+
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+
 Q8S5KW moo.com free shipping code
 
 
