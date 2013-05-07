@@ -1,0 +1,32 @@
+<%= form_for @message, :url => contact_path do |form| %>
+  <fieldset class="fields">
+    <div class="field">
+      <%= form.label :name %>
+      <%= form.text_field :name, :class => 'span6 text input-xxlarge' %>
+    </div>
+
+    <div class="field">
+      <%= form.label :email, 'Your Email Address' %>
+      <%= form.text_field :email, :class => 'span6 text input-xxlarge' %>
+    </div>
+
+    <div class="field">
+      <%= form.label :phone, 'Phone Number' %>
+      <%= form.text_field :email, :class => 'span6 text input-xxlarge' %>
+    </div>
+
+    <div class="field">
+      <%= form.label :subject %>
+      <%= form.text_field :subject, :class => 'span6 text input-xxlarge' %>
+    </div>
+
+    <div class="field">
+      <%= form.label :body, 'Message' %>
+      <%= form.text_area :body, :rows => 10%>
+    </div>
+  </fieldset>
+
+  <fieldset class="actions">
+    <%= form.submit "Send", :class => 'btn' %>
+  </fieldset>
+<% end %>

@@ -1,0 +1,186 @@
+				<% [:notice, :error, :alert].each do |level| %>
+					<% unless flash[level].blank? %>
+						<br/>
+						<div class="alert alert-<%= flash_class(level) %>">
+							<%= flash[level] %>
+						</div>
+					<% end %>
+				<% end %>
+
+
+				<div class="hero-unit">
+				<!-- Place somewhere in the <body> of your page -->
+					<div class="slider-wrapper theme-default hero-unittext">
+						<div id="slider" class="flexslider">
+							<ul class="slides">
+								<li>
+									<div class="span12">
+										<h1 class="flex-caption">Quality</h1>
+										<h3 class="flex-caption">Applications that are built to last.</h3>
+									</div>
+
+								</li>
+								<li>
+									<div class="span12">
+										<h1 class="flex-caption">Agile</h1>
+										<h3 class="flex-caption">Short build cycles and frequent progress updates.</h3>
+									</div>
+
+								</li>
+								<li>
+									<div class="span12">
+										<h1 class="flex-caption">Support</h1>
+										<h3 class="flex-caption">Code and run? Not this developer!</h3>
+									</div>
+
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+
+Q8S5KW moo.com free shipping code
+
+
+Quality
+My focus is always on building quality products that are built to last.
+
+Agile
+I build in an agile way to make sure you can follow your project from start to finish
+
+Ongoing Support
+Some people code and run. I don't.
+
+
+-technologies I work with
+-selling points (quality, efficiency, )
+-
+
+#B40404
+
+#CE5010
+
+../../../vendor/assets/stylesheets/.
+
+../../../vendor/assets/javascripts/.
+
+	***home
+
+					<div class="slider-wrapper theme-default">
+						<div id="slider" class="nivoSlider">
+							<!-- Slider items here-->
+							<%= link_to(image_tag("img/homeslides/quality.jpg"), "#") %>
+							<%= link_to(image_tag("img/homeslides/agile.jpg"), "#") %>
+							<%= link_to(image_tag("img/homeslides/support.jpg"), "#") %>
+						</div>
+								<!-- Some shadow--><%= image_tag("img/shadow.png", :alt => "", :class => "shadowslider") %>
+					</div>
+
+					***
+
+			<!-- Second portofolio simple row-->
+			<div class="row-fluid">
+				<div class="span4 portof">
+						<%= image_tag("img/portofolio1/slide4.jpg", :class => "grayscale", :alt => "") %>
+					<div class="projectdesc">
+						<p>
+							 Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum mas.
+						</p>
+						<p>
+							<a href="#" class="minibutton">view project</a>
+						</p>
+					</div>
+				</div>
+
+				<div class="span4 portof">
+						<%= image_tag("img/portofolio1/slide5.jpg", :class => "grayscale", :alt => "") %>
+					<div class="projectdesc">
+						<p>
+							 Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum mas.
+						</p>
+						<p>
+							<a href="#" class="minibutton">view project</a>
+						</p>
+					</div>
+				</div>
+
+				<div class="span4 portof">
+						<%= image_tag("img/portofolio1/slide6.jpg", :class => "grayscale", :alt => "") %>
+					<div class="projectdesc">
+						<p>
+							 Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum mas.
+						</p>
+						<p>
+							<a href="#" class="minibutton">view project</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			</section>
+			<div class="pagebreak">
+			</div>
+			<br/>
+
+***
+
+			<!-- PORTOFOLIO FILTERABLE
+            ================================================== -->
+			<div class="separator"></div>
+			<div class="row-fluid">
+				<div class="span12 addspace">
+					<h1>PORTOFOLIO 2</h1>
+				</div>
+			</div>
+			<div class="row-fluid">
+				<div class="span12 addspace">
+					<aside class="clearfix">
+					<nav class="category clearfix">
+					<ul> <!-- Define portofolio categories-->
+						<li><a href="#" class="selected" data-filter="*">All</a></li>
+						<li><a href="#" data-filter=".flowers">Flowers</a></li>
+						<li><a href="#" data-filter=".nature">Nature</a></li>
+						<li><a href="#" data-filter=".animals">Animals</a></li>
+						<li><a href="#" data-filter=".buildings">Buildings</a></li>
+						<li><a href="#" data-filter=".cities">Cities</a></li>
+					</ul>
+					</nav>
+					</aside>
+						<section class="main clearfix">
+						<div class="fportfolio isotope">
+						     <!-- Add images-->
+							<article class="entry animals buildings isotope-item">
+							<%= image_tag("img/filterable/1.jpg", :alt => "") %>
+							<span class="hover"></span>
+							</article>
+
+							<article class="entry buildings animals isotope-item">
+							<%= image_tag("img/filterable/1.jpg", :alt => "") %>
+							<span class="hover"></span>
+							</article>
+
+							<article class="entry flowers nature isotope-item">
+							<%= image_tag("img/filterable/1.jpg", :alt => "") %>
+							<span class="hover"></span>
+							</article>
+
+							<article class="entry nature cities flowers isotope-item">
+							<%= image_tag("img/filterable/1.jpg", :alt => "") %>
+							<span class="hover"></span>
+							</article>
+
+							<article class="entry animals cities buidlings isotope-item">
+							<%= image_tag("img/filterable/1.jpg", :alt => "") %>
+							<span class="hover"></span>
+							</article>
+
+							<article class="entry buldings cities animals flowers isotope-item">
+							<%= image_tag("img/filterable/1.jpg", :alt => "") %>
+							<span class="hover"></span>
+							</article>
+						</div>
+						</section>
+				</div>
+			</div>
+			<div class="pagebreak"></div>
+			<br/>

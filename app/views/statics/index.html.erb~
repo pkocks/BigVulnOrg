@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Mujtaba Badat - Freelance Web Developer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="Mujtaba Badat">
+<!-- Styles -->
+<%= stylesheet_link_tag "application.css" %>
+<%= stylesheet_link_tag "afolique/style-responsive.css" %>
+<!-- HTML5 for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+<!--[if IE 8]>
+	<%= stylesheet_link_tag "ie8.css" %>
+<![endif]-->
+<!-- Fav and touch icons -->
+<link rel="shortcut icon" href="ico/favicon.ico">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+<!-- Javascript placed at the end of the document so the pages load faster -->
+</head>
+<body>
+<div class="container-fluid">
+	<div class="row-fluid">
+	    <!-- SIDEBAR
+		================================================== -->
+		<div class="span3">
+			<div class="well sidebar-nav sidebar-nav-fixed">
+				<div class="logo">
+					<!-- Logo --><a href="#home"><p>Mujtaba</p>Badat</a>
+				</div>
+				<ul>
+					<!-- MENU - Note that "#..." is the anchor id. Each one should correspond to our id sections below.
+                    ================================================== -->
+
+					<li><a class="about" href="#about">About me</a></li>
+					<!--<li class="description">Who I am</li>-->
+
+					<li><a class="services" href="#services">Services</a></li>
+
+					<li><a class="portofolio" href="#portofolio">Portfolio</a></li>
+
+					<li><a class="workflow" href="#workflow">Workflow</a></li>
+
+					<li><a class="contact" href="#contact">Contact</a></li>
+				</ul>
+				<div class="social">
+					<a href="http://www.linkedin.com/in/mujtabab", target="_blank"><%= image_tag("img/linkedin.png", :alt => "Linkedin") %></a>
+					<a href="https://twitter.com/mujtaba3b", target="_blank"><%= image_tag("img/twitter.png", :alt => "Twitter") %></a>
+					<a href="https://github.com/mujtaba3b", target="_blank"><%= image_tag("img/github.png", :alt => "Github") %></a>
+				</div>
+			</div>
+		</div>
+
+		<!-- MAIN CONTENT
+		================================================== -->
+		<div class="span9">
+			<!-- HOME SECTION
+            ================================================== -->
+			<section id="home">
+				<% [:notice, :error, :alert].each do |level| %>
+					<% unless flash[level].blank? %>
+						<br/>
+						<div class="alert alert-<%= flash_class(level) %>">
+							<%= flash[level] %>
+						</div>
+					<% end %>
+				<% end %>
+
+				<div class="hero-unit">
+				<!-- Place somewhere in the <body> of your page -->
+					<div class="slider-wrapper theme-default hero-unittext">
+						<div id="slider" class="flexslider">
+							<ul class="slides">
+								<li>
+									<div class="span12">
+										<h1 class="flex-caption" style="font-size:550%;">Quality</h1>
+										<h3 class="flex-caption">Applications that are built to last.</h3>
+									</div>
+
+								</li>
+								<li>
+									<div class="span12">
+										<h1 class="flex-caption">Agile</h1>
+										<h3 class="flex-caption">Short build cycles and frequent progress updates.</h3>
+									</div>
+
+								</li>
+								<li>
+									<div class="span12">
+										<h1 class="flex-caption">Support</h1>
+										<h3 class="flex-caption">Code and run? Not this developer!</h3>
+									</div>
+
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- ABOUT SECTION
+            ================================================== -->
+			<section id="about">
+			<div class="hero-unittext">
+				<h1>- Are you in need of an awesome web developer? -</h1>
+				<h2>Then we need to <span class="highlighthero">get in touch</span>!</h2>
+			</div>
+			<div class="row-fluid">
+				<div class="span12">
+					<h1>I LOVE BUILDING SOFTWARE!</h1>
+					<p>
+						 Well, that's not entirely true. I love building <span class="servicetitle grey">great software!</span> I always get a kick out of completing a project on time and <span class="servicetitle">above expectations.</span>
+					</p>
+				</div>
+
+				<!--
+				<div class="span4">
+					<a href="#contact">
+					<div class="tdiv t5">
+						 Stuff goes in here!
+					</div>
+					</a>
+				</div>
+				-->
+
+			</div>
+			<br/>
+			<div class="row-fluid">
+				<div class="span4">
+					<h2>Education</h2>
+					<p>
+						 I hold a combined science degree from the University of British Columbia. I've studied a wide variety of topics from database optimization and software development to artificial intelligence and machine learning.
+					</p>
+					<p class="fancystyle">
+						 B.Sc. Computer Science and Statistics
+					</p>
+				</div>
+				<div class="span4">
+					<h2>Experience</h2>
+					<p>
+						I wrote my first line of code in 2008 and haven't looked back since. Since then, I've built dozens of applications, competed in several coding competitions, and have been a part of multiple web based startups.
+					</p>
+					<p class="fancystyle">
+						 Developing software for 5+ years
+					</p>
+				</div>
+				<div class="span4">
+					<h2>Achievements</h2>
+					<p>
+						With the help of some awesome partners, I've won and placed at multiple competitions including Startup Weekend and HackVAN. My team was also accepted into an incubator program that recieved funding to pursue our startup, an iPad magazine that magically fills itself with articles related to products you are interested in.
+					</p>
+					<p class="fancystyle">
+						 First Place at HackVAN 2012
+					</p>
+				</div>
+			</div>
+			</section>
+			<div class="pagebreak">
+			</div>
+
+			<!-- SERVICES
+            ================================================== -->
+			<section id="services">
+			<div class="separator"></div><br/>
+			<div class="row-fluid">
+				<div class="span12">
+					<h1>WAYS I CAN HELP YOU</h1>
+				</div>
+			</div>
+			<div class="row-fluid">
+				<div class="span6">
+					<span class="servicetitle">Work with any of these</span>
+					<ul class="fancystyle">
+						<li>
+							Ruby on Rails (my favorite)
+						</li>
+						<br/>
+						<li>
+							Linux, Apache, MySQL, PHP
+						</li>
+						<br/>
+						<li>
+							Javascript and jQuery
+						</li>
+						<br/>
+						<li>
+							HTML5, CSS3, and Twitter Bootstrap
+						</li>
+						<br/>
+						<li>
+							SDK's and API's
+						</li>
+						<br/>
+						<li>
+							Mobile web (especially tablets)
+						</li>
+					<ul>
+				</div>
+				<div class="span6">
+					<span class="servicetitle grey">Build from scratch</span>
+					<p>
+							You have an idea, and maybe a plan. Now you need someone to execute.
+					</p>
+					<ul class="fancystyle">
+						<li>
+							Convert and idea to a clear software blueprint
+						</li>
+						<br/>
+						<li>
+							Collaborate with a designer
+						</li>
+						<br/>
+						<li>
+							Collaborate with other developers
+						</li>
+						<br/>
+						<li>
+							Build for longevity and easy maintenance
+						</li>
+					</ul>
+				</div>
+			</div>
+			<br/>
+			<div class="row-fluid">
+				<div class="span6">
+					<span class="servicetitle grey">Debug/Revive broken apps</span>
+						<p>
+							No matter how skilled of a developer, everyone is bound to make mistakes; it happens to the best of us. Sometimes it just takes a fresh set of eyes to pick out a tiny bug that would otherwise take you days to squash.
+						</p>
+				</div>
+				<div class="span6">
+					<span class="servicetitle">Consulting</span>
+						<p>
+							Maybe you just need a little bit of advice to get you on your way with your project. I can provide consultation for anything from project planning and technology choices to the nitty gritty details of your SQL schema and your machine learning algorithm.
+						</p>
+				</div>
+			</div>
+			</section>
+			<div class="pagebreak">
+			</div>
+
+			<!-- PORTOFOLIO SIMPLE
+            ================================================== -->
+			<section id="portofolio">
+			<div class="separator"></div><br/>
+			<div class="row-fluid">
+				<div class="span10 addspace">
+					<h1>SOME OF THE THINGS I'VE BUILT</h1>
+				</div>
+			</div>
+			<!-- First portofolio simple row-->
+			<div class="row-fluid">
+				<div class="span4 portof">
+						<h2>
+							This website
+						</h2>
+						<p>
+							An elegant, responsive website to help the world find out what Mujtaba Badat has to offer.
+						</p>
+					<div class="projectdesc">
+						<ul>
+							<li>
+								Ruby on Rails
+							</li>
+							<li>
+								Twitter Bootsrap
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="span4 portof">
+					<h2>
+						ezCRM
+					</h2>
+						<p>
+							 A simple CRM that interfaces through SMS.
+						</p>
+					<div class="projectdesc">
+						<ul>
+							<li>
+								Ruby on Rails
+							</li>
+							<li>
+								Twilio API
+							</li>
+						</ul>
+						<p>
+							<a href="https://github.com/mujtaba3B/ezCRM" class="minibutton">view project</a>
+						</p>
+					</div>
+				</div>
+
+				<div class="span4 portof">
+						<h2>Negochi</h2>
+						<p>
+							 eHarmony for finding your perfect home service professional (ie: plumbers, roofers, electricians, etc.)
+						</p>
+					<div class="projectdesc">
+						<ul>
+							<li>
+								Ruby on Rails
+							</li>
+							<li>
+								Nokogiri Web Scraping
+							</li>
+							<li>
+								Yelp API
+							</li>
+							<li>
+								Twitter Bootstrap
+							</li>
+						</ul>
+						<p>
+							<a href="http://negochi.herokuapp.com/" class="minibutton" target="_blank">view project</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<br/>
+
+			<!-- WORKFLOW SECTION
+            ================================================== -->
+			<section id="workflow">
+			<div class="separator"></div><br/>
+			<div class="row-fluid">
+				<div class="span12">
+					<h1>MY PROCESS OF GETTING THINGS DONE</h1>
+
+					<q class="servicetitle grey">
+					 "We don’t need an accurate document, we need a shared understanding."
+					</q>
+
+					<p>
+						<span class="servicetitle grey">-Jeff Patton</span>
+					</p>
+					<p>
+						My workflow is dominated by an agile development approach. In a nutshell, this means I focus on building in short code sprints and sharing what I've built periodically to make sure there are no surprises when you see the finished product.
+					</p>
+				</div>
+			</div>
+			<br/>
+			<div class="row-fluid">
+				<div class="span6">
+					<h2>Step 1: Consultation</h2>
+					<p>
+						 	Create a clear, but simple overview of what you are looking for. We'll make some, but not all the decisions here because we we want the project to naturally form through the agile development in step 2.
+					</p>
+				</div>
+				<div class="span6">
+					<h2>Step 2: Agile Development</h2>
+					<p>
+						Code sprints followed by verifying that project is on track. Repeat until we're at step 3.
+					</p>
+				</div>
+			</div>
+			<div class="row-fluid">
+				<div class="span6">
+					<h2>Step 3: Delivery</h2>
+					<p>
+						Since we've made mini-deliveries along the way, the final delivered product is no surpise and exactly what you wanted. This is especially the case with larger projects.
+					</p>
+				</div>
+				<div class="span6">
+					<h2>Step 4: Support</h2>
+					<p>
+						The person who built the software is best qualified to asnwer questions about it. I stand by my work and can make myself available to provide ongoing support for your application.
+					</p>
+				</div>
+			</div>
+			</section>
+			<div class="pagebreak">
+			</div>
+
+			<!-- CONTACT
+			================================================== -->
+			<section id="contact">
+			<div class="separator"></div><br/>
+			<div class="row-fluid">
+				<div class="span12 addspace">
+					<h1>GET IN TOUCH</h1>
+					<p>
+						Don't be shy! I love chatting about new projects and unlike your lawyer, I won't bill you just to have you explain what you are trying to achieve!
+					</p>
+				</div>
+			</div>
+			<div class="row-fluid" style="min-height:520px;">
+				<%= render :template => 'contact/new' %>
+			</div>
+		</section>
+		<br/>
+
+		<!-- FOOTER
+            ================================================== -->
+		<div class="row-fluid">
+			<div class="span12 addspace center">
+				<p>
+					<small>&copy; 2013 Mujtaba Badat Freelance</small>
+				</p>
+			</div>
+		</div>
+
+		<!-- CLOSE ALL DIVS
+            ================================================== -->
+	</div><!--/.span9-->
+    </div><!--/.row-fluid-->
+</div><!--/.container-fluid-->
+
+<!-- Javascript placed at the end of the document so the pages load faster -->
+<%= javascript_include_tag "application.js" %>
+</body>
+</html>
