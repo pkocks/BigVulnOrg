@@ -109,7 +109,7 @@
 			<section id="about">
 			<div class="hero-unittext">
 				<h1>- Are you in need of an awesome web developer? -</h1>
-				<h2>Then we need to <span class="highlighthero">get in touch</span>!</h2>
+				<h2>Then we need to <span class="highlighthero">get in touch!</span></h2>
 			</div>
 			<div class="row-fluid">
 				<div class="span12">
@@ -199,6 +199,10 @@
 						<br/>
 						<li>
 							Mobile web (especially tablets)
+						</li>
+						<br/>
+						<li>
+							Heroku
 						</li>
 					<ul>
 				</div>
@@ -296,7 +300,6 @@
 						</p>
 					</div>
 				</div>
-
 				<div class="span4 portof">
 						<h2>Negochi</h2>
 						<p>
@@ -319,6 +322,51 @@
 						</ul>
 						<p>
 							<a href="http://negochi.herokuapp.com/" class="minibutton" target="_blank">view project</a>
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row-fluid">
+				<div class="span4 portof">
+						<h2>
+							This website
+						</h2>
+						<p>
+							An elegant, responsive website to help the world find out what Mujtaba Badat has to offer.
+						</p>
+					<div class="projectdesc">
+						<ul>
+							<li>
+								Ruby on Rails
+							</li>
+							<li>
+								Twitter Bootsrap
+							</li>
+						</ul>
+					</div>
+				</div>
+
+			<!-- second portfolio row -->
+
+				<div class="span4 portof">
+					<h2>
+						Naive Bayes Classifier
+					</h2>
+						<p>
+							 A naive bayes classifier designed for sentiment analysis of tweets.
+						</p>
+					<div class="projectdesc">
+						<ul>
+							<li>
+								Python
+							</li>
+							<li>
+								Machine Learning
+							</li>
+						</ul>
+						<p>
+							<a href="https://github.com/mujtaba3B/Naive-Bayes-Classifier" class="minibutton">view project</a>
 						</p>
 					</div>
 				</div>
