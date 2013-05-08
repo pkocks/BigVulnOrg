@@ -64,13 +64,24 @@ module Freelance
     config.action_mailer.smtp_settings = {
 			:address              => "smtp.gmail.com",
 			:port                 => 587,
-			:domain               => "mujtababadat.com",
+			:domain               => "google.com",
 			:user_name            => "mujtaba.badat@gmail.com",
 			:password             => "BaldasKhan786",
 			:authentication       => :plain,
 			:enable_starttls_auto => true
 		}
 
+=begin
+    config.action_mailer.smtp_settings = {
+			:address              => "smtp.gmail.com",
+			:port                 => 587,
+			:domain               => "mujtababadat.com",
+			:user_name            => "mujtaba.badat@gmail.com",
+			:password             => "BaldasKhan786",
+			:authentication       => :plain,
+			:enable_starttls_auto => true
+		}
+=end
 		config.action_mailer.default_url_options = {
 			:host => "mujtababadat.com"
 		}
